@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>Image Puzzle Game</title>
+  <style>
+  .picture {
+    border: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+  <div id="title">
+    <h2>Image Puzzle Game</h2>
+    <p> You can go through the slider to determine the level of difficulty you wish to play.</p>
+  </div>
+  <div id="slider">
+    <form>
+      <label>Easy</label>
+      <input type="range" id="scale" value="4" min="3" max="6" step="1">
+      <label>Hard</label>
+    </form>
+    <br>
+  </div>
+  <div id="main" class="main">
+    <canvas id="puzzle" width="480px" height="480px"></canvas>
+  </div>
+
+  <div id="Second-title">
+    <h3> HINT: </h3>
+    <p>Below is a floating image of the puzzle you're given.</p>
+  </div>
+
+  <div id="main_image">
+    <br> <marquee><right><img src="ImagePuzzleGame.jpg"> </right></marquee>    
+  <script src="sliderandom.js"></script>
+</body>
+</html>
